@@ -7,6 +7,8 @@ require_once('../inc/config.php');
 require_once('../inc/functions.php');
 require_once('../inc/fetch-session-inputs.php');
 
+//Start buffering
+startBuffering();
 ?>
 
 <!doctype html>
@@ -1353,5 +1355,8 @@ require_once('../inc/fetch-session-inputs.php');
 </html>
 </div>
 <?php
-// download_file($site_url, "layout1.php");
+//Guardar datos de buffer
+save_file();
+//Detener buffer
+stopBuffering();
 ?>
