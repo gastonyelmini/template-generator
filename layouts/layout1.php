@@ -1353,10 +1353,10 @@ startBuffering();
         </center>
     </body>
 </html>
-</div>
+
 <?php
 //Guardar datos de buffer
-save_file();
+save_file($files_path);
 //Detener buffer
 stopBuffering();
 ?>

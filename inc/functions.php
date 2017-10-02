@@ -11,9 +11,16 @@ function stopBuffering() {
 }
 
 //Guardar contenido del buffer
-function save_file() {
+function save_file($files_path) {
+  $ext = ".txt";
+  //Assing unique id
   $file_name = uniqid();
-  file_put_contents("../files/$file_name.txt", ob_get_contents());
+  //save stream
+  file_put_contents("../files/$file_name$ext", ob_get_contents());
+  //automatically download file
+  header("Content-Type: application/octet-stream");
+  header("Content-Disposition: attachment; filename=$file_name$ext");
+  readfile("../files/$file_name$ext");
 }
 
 //Guardar images
