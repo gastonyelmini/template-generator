@@ -107,7 +107,7 @@ p, label, input, textarea {
   padding: 10px 15px;
   border: 1px solid #00d7e6;
 }
-.generate {
+.submit {
   border: none;
   border-radius: 5px;
   padding: 10px 15px;
@@ -116,6 +116,14 @@ p, label, input, textarea {
   margin-top: 20px;
   font-weight: bold;
   text-transform: uppercase;
+	width: 49% !important;
+	float: left;
+	margin-bottom: 50px;
+	cursor: pointer;
+}
+.prev {
+	margin-right: 2%;
+	background-color: #FF9800;
 }
 .uppercase {
   text-transform: uppercase;

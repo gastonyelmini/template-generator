@@ -2,6 +2,9 @@
 
 //Guardo los inputs de sesion en Variables
 
+//Accion deseada
+$action = $_SESSION['inputs']['action'];
+
 //Main image and title
 $main_title = $_SESSION['inputs']['main-title'];
 $main_image_path = $_SESSION['inputs']['main-image-server-name'];

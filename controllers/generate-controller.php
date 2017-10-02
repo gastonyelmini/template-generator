@@ -7,6 +7,15 @@ require_once('../inc/functions.php');
 
 //START Variables
 
+//Accion deseada
+if ($_POST['preview']) {
+  $_SESSION['inputs']['action'] = "preview";
+} elseif ($_POST['generate']) {
+  $_SESSION['inputs']['action'] = "generate";
+} else {
+  echo "Ocurrió un error interno.";
+}
+
 //Imagen princial del template
 $main_image_new_id = uniqid();
 $assigned_name = save_image('main-image', $main_image_new_id, '../images/uploads/');

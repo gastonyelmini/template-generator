@@ -17,7 +17,7 @@
         <p>Rellená todos los campos para generar el template.</p>
         <div class="form-content">
 
-          <form class="" enctype="multipart/form-data" action="controllers/generate-controller.php" method="post">
+          <form target="_blank" enctype="multipart/form-data" action="controllers/generate-controller.php" method="post">
             <!-- Imagen pricipal del template -->
             <label for="main-image" class="uppercase">Indique la <span class="mark-color">imágen principal</span></label>
             <input class="select-file" type="file" name="main-image" value="" required="true">
@@ -84,7 +84,8 @@
             </div>
 
             <!-- Generar template -->
-            <input type="submit" name="generate" value="Generar" class="generate">
+            <input type="submit" name="preview" value="Previsualizar" class="submit prev">
+            <input type="submit" name="generate" value="Generar" class="submit">
           </form>
         </div>
       </div>

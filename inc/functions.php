@@ -17,10 +17,9 @@ function save_file($files_path) {
   $file_name = uniqid();
   //save stream
   file_put_contents("../files/$file_name$ext", ob_get_contents());
-  //automatically download file
+  //Descargar el archivo generado
   header("Content-Type: application/octet-stream");
   header("Content-Disposition: attachment; filename=$file_name$ext");
-  readfile("../files/$file_name$ext");
 }
 
 //Guardar images
@@ -31,6 +30,6 @@ function save_image($input_name, $image_name, $path) {
 			$_FILES[$input_name]['tmp_name'],
 			$path.$image_name.'.'.$ext
 		);
-		return $image_name.'.'.$ext;
   }
+  return $image_name.'.'.$ext;
 }

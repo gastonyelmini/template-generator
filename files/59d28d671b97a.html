@@ -1,17 +1,3 @@
-<?php
-
-//Inicializo session
-session_start();
-
-require_once('../inc/config.php');
-require_once('../inc/functions.php');
-require_once('../inc/fetch-session-inputs.php');
-
-//Start buffering
-if ($action === "generate") {
-	startBuffering();
-}
-?>
 
 <!doctype html>
 <html xmlns="http://www.w3.org/1999/xhtml" xmlns:v="urn:schemas-microsoft-com:vml" xmlns:o="urn:schemas-microsoft-com:office:office">
@@ -566,8 +552,7 @@ if ($action === "generate") {
                                   <tbody>
                                     <tr>
                                       <td class="mcnImageContent" valign="top" style="padding-top: 0; padding-bottom: 0; text-align:center;">
-                                        <?php echo "<img align='center' src='$site_url$uploads_path$main_image_path' width='564' style='width:100%; padding-bottom: 0; display: inline !important; vertical-align: bottom;' class='mcnImage'>"?>
-                                      </td>
+                                        <img align='center' src='http://localhost:8888/template-generator/images/uploads/59d28d67180e2.jpg' width='564' style='width:100%; padding-bottom: 0; display: inline !important; vertical-align: bottom;' class='mcnImage'>                                      </td>
                                     </tr>
                                   </tbody>
                                 </table>
@@ -592,8 +577,8 @@ if ($action === "generate") {
 
                           <td valign="top" class="mcnTextContent" style="padding-top:6px; padding-right:18px; padding-bottom:9px; padding-left:18px;">
 
-                              <div style="text-align: center;"><span style="color:#000000"><span style="font-family:roboto,helvetica neue,helvetica,arial,sans-serif"><span style="font-size:20px"><strong><?php echo $main_title; ?></strong></span><br>
-  <span style="font-size:11px"><em>Por&nbsp;<?php echo "<a href='$author_twitter' target='_blank'>" . $author_name . '&nbsp;</a>'; ?>&nbsp;en&nbsp;<a href="https://medium.com/latio-reads/tagged/destacados-semanales" target="_blank">#LatioSemanal</a>. <?php echo $publish_date; ?>.</em></span></span></span></div>
+                              <div style="text-align: center;"><span style="color:#000000"><span style="font-family:roboto,helvetica neue,helvetica,arial,sans-serif"><span style="font-size:20px"><strong>uygiuygiyu</strong></span><br>
+  <span style="font-size:11px"><em>Por&nbsp;<a href='yugigyui' target='_blank'>iyuygu&nbsp;</a>&nbsp;en&nbsp;<a href="https://medium.com/latio-reads/tagged/destacados-semanales" target="_blank">#LatioSemanal</a>. gyugy.</em></span></span></span></div>
 
                           </td>
                       </tr>
@@ -627,7 +612,7 @@ if ($action === "generate") {
 
                           <td valign="top" class="mcnTextContent" style="padding-top:0; padding-right:18px; padding-bottom:9px; padding-left:18px;">
 
-                              <span style="color:#000000"><span style="font-size:14px"><span style="font-family:open sans,helvetica neue,helvetica,arial,sans-serif"><?php echo $description; ?></span></span></span><br>
+                              <span style="color:#000000"><span style="font-size:14px"><span style="font-family:open sans,helvetica neue,helvetica,arial,sans-serif">yguuygguyi</span></span></span><br>
   &nbsp;
                           </td>
                       </tr>
@@ -735,8 +720,8 @@ if ($action === "generate") {
                         <td valign="top" class="mcnTextContent" style="padding-top:0; padding-right:18px; padding-bottom:9px; padding-left:18px;">
 
                             <br>
-<span style="font-family:roboto,helvetica neue,helvetica,arial,sans-serif"><span style="font-size:15px"><?php echo "<a href='$t3_n1_link' target='_blank'>"; ?><strong><?php echo $t3_n1_title; ?> &gt;&nbsp;</strong></a></span></span><br>
-<span style="font-family:open sans,helvetica neue,helvetica,arial,sans-serif"><span style="font-size:14px"><span style="color:#000000"><?php echo $t3_n1_desc; ?></span></span></span><br>
+<span style="font-family:roboto,helvetica neue,helvetica,arial,sans-serif"><span style="font-size:15px"><a href='yguiyguiuyg' target='_blank'><strong>yugyguiyguigyui &gt;&nbsp;</strong></a></span></span><br>
+<span style="font-family:open sans,helvetica neue,helvetica,arial,sans-serif"><span style="font-size:14px"><span style="color:#000000">yguiygu</span></span></span><br>
 &nbsp;
                         </td>
                     </tr>
@@ -788,8 +773,8 @@ if ($action === "generate") {
                         <td valign="top" class="mcnTextContent" style="padding-top:0; padding-right:18px; padding-bottom:9px; padding-left:18px;">
 
                             <br>
-<span style="font-family:roboto,helvetica neue,helvetica,arial,sans-serif"><span style="font-size:15px"><?php echo "<a href='$t3_n2_link' target='_blank'>"; ?><strong><?php echo $t3_n2_title; ?> &gt;</strong></a></span></span><br>
-<span style="font-family:open sans,helvetica neue,helvetica,arial,sans-serif"><span style="color:#000000"><span style="font-size:14px"><?php echo $t3_n2_desc; ?></span></span></span><br>
+<span style="font-family:roboto,helvetica neue,helvetica,arial,sans-serif"><span style="font-size:15px"><a href='yugiygugyu' target='_blank'><strong>gyuigyugyu &gt;</strong></a></span></span><br>
+<span style="font-family:open sans,helvetica neue,helvetica,arial,sans-serif"><span style="color:#000000"><span style="font-size:14px">ygiuygiuigyu</span></span></span><br>
 &nbsp;
                         </td>
                     </tr>
@@ -841,8 +826,8 @@ if ($action === "generate") {
                         <td valign="top" class="mcnTextContent" style="padding-top:0; padding-right:18px; padding-bottom:9px; padding-left:18px;">
 
                             <br>
-<?php echo "<a href='$t3_n3_link' target='_blank'>"; ?><span style="font-family:roboto,helvetica neue,helvetica,arial,sans-serif"><span style="font-size:15px"><strong><?php echo $t3_n3_title; ?> &gt;</strong></span></span></a><br>
-<span style="font-family:open sans,helvetica neue,helvetica,arial,sans-serif"><span style="color:#000000"><span style="font-size:14px"><?php echo $t3_n3_desc; ?></span></span></span><span style="font-family:open sans,helvetica neue,helvetica,arial,sans-serif"><span style="color:#000000"><span style="font-size:14px">.</span></span></span><br>
+<a href='yguyguiiguy' target='_blank'><span style="font-family:roboto,helvetica neue,helvetica,arial,sans-serif"><span style="font-size:15px"><strong>yguyguiygu &gt;</strong></span></span></a><br>
+<span style="font-family:open sans,helvetica neue,helvetica,arial,sans-serif"><span style="color:#000000"><span style="font-size:14px">yugiyguiigyu</span></span></span><span style="font-family:open sans,helvetica neue,helvetica,arial,sans-serif"><span style="color:#000000"><span style="font-size:14px">.</span></span></span><br>
 &nbsp;
                         </td>
                     </tr>
@@ -964,10 +949,9 @@ if ($action === "generate") {
             <tr>
               <td valign="top" class="mcnTextContent" style="padding-top:0; padding-right:18px; padding-bottom:9px; padding-left:18px;">
                 <br>
-                  <?php echo "<a href='$e1_link' target='_blank'>"; ?>
-                    <span style="font-family:roboto,helvetica neue,helvetica,arial,sans-serif">
+                  <a href='yguiyguygu' target='_blank'>                    <span style="font-family:roboto,helvetica neue,helvetica,arial,sans-serif">
                       <span style="font-size:15px">
-                        <strong><?php echo $e1_title; ?> &gt;</strong>
+                        <strong>yugyugyugi &gt;</strong>
                       </span>
                     </span>
                   </a>
@@ -975,14 +959,12 @@ if ($action === "generate") {
                 <span style="font-family:open sans,helvetica neue,helvetica,arial,sans-serif">
                   <span style="color:#000000">
                     <span style="font-size:14px">
-                      <?php echo $e1_desc; ?>
-                    </span>
+                      yugiyguygu                    </span>
                   </span>
                   <br>
                   <span style="color:#A9A9A9">
                     <span style="font-size:14px">
-                      <?php echo $e1_date . " · " . $e1_type . " · " . $e1_fee . " · " . $e1_location; ?>
-                    </span>
+                      yugiyugigyu · yuyuyu · yugyugi · uyigyug                    </span>
                   </span>
                 </span>
                 <br>
@@ -1021,10 +1003,9 @@ if ($action === "generate") {
             <tr>
               <td valign="top" class="mcnTextContent" style="padding-top:0; padding-right:18px; padding-bottom:9px; padding-left:18px;">
                 <br>
-                  <?php echo "<a href='$e2_link' target='_blank'>"; ?>
-                    <span style="font-family:roboto,helvetica neue,helvetica,arial,sans-serif">
+                  <a href='' target='_blank'>                    <span style="font-family:roboto,helvetica neue,helvetica,arial,sans-serif">
                       <span style="font-size:15px">
-                        <strong><?php echo $e2_title; ?> &gt;</strong>
+                        <strong> &gt;</strong>
                       </span>
                     </span>
                   </a>
@@ -1032,14 +1013,12 @@ if ($action === "generate") {
                 <span style="font-family:open sans,helvetica neue,helvetica,arial,sans-serif">
                   <span style="color:#000000">
                     <span style="font-size:14px">
-                      <?php echo $e2_desc; ?>
-                    </span>
+                                          </span>
                   </span>
                   <br>
                   <span style="color:#A9A9A9">
                     <span style="font-size:14px">
-                      <?php echo $e2_date . " · " . $e2_type . " · " . $e2_fee . " · " . $e2_location; ?>
-                    </span>
+                       ·  ·  ·                     </span>
                   </span>
                 </span>
                 <br>
@@ -1078,10 +1057,9 @@ if ($action === "generate") {
               <tr>
                 <td valign="top" class="mcnTextContent" style="padding-top:0; padding-right:18px; padding-bottom:9px; padding-left:18px;">
                   <br>
-                    <?php echo "<a href='$e3_link' target='_blank'>"; ?>
-                      <span style="font-family:roboto,helvetica neue,helvetica,arial,sans-serif">
+                    <a href='' target='_blank'>                      <span style="font-family:roboto,helvetica neue,helvetica,arial,sans-serif">
                         <span style="font-size:15px">
-                          <strong><?php echo $e3_title; ?> &gt;</strong>
+                          <strong> &gt;</strong>
                         </span>
                       </span>
                     </a>
@@ -1089,14 +1067,12 @@ if ($action === "generate") {
                   <span style="font-family:open sans,helvetica neue,helvetica,arial,sans-serif">
                     <span style="color:#000000">
                       <span style="font-size:14px">
-                        <?php echo $e3_desc; ?>
-                      </span>
+                                              </span>
                     </span>
                     <br>
                     <span style="color:#A9A9A9">
                       <span style="font-size:14px">
-                        <?php echo $e3_date . " · " . $e3_type . " · " . $e3_fee . " · " . $e3_location; ?>
-                      </span>
+                         ·  ·  ·                       </span>
                     </span>
                   </span>
                   <br>
@@ -1356,11 +1332,3 @@ if ($action === "generate") {
     </body>
 </html>
 
-<?php
-if ($action === "generate") {
-	//Guardar datos de buffer
-	save_file($files_path);
-	//Detener buffer
-	stopBuffering();
-}
-?>
