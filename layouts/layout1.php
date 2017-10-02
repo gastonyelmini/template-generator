@@ -1,20 +1,11 @@
 <?php
 
-require_once('inc/config.php');
-
 //Inicializo session
 session_start();
 
-//Guardo los inputs de sesion en Variables
-
-//Main image and title
-$main_title = $_SESSION['inputs']['main-title'];
-$main_image_path = $_SESSION['inputs']['main-image-server-name'];
-
-//Author and publish date
-$author_name = $_SESSION['inputs']['editor-name'];
-$author_twitter = $_SESSION['inputs']['editor-twitter'];
-$publish_date = $_SESSION['inputs']['publish-date'];
+require_once('../inc/config.php');
+require_once('../inc/functions.php');
+require_once('../inc/fetch-session-inputs.php');
 
 ?>
 
@@ -501,94 +492,98 @@ $publish_date = $_SESSION['inputs']['publish-date'];
 			/*@editable*/line-height:150% !important;
 		}
 
-}</style></head>
-    <body>
-		<!--*|IF:MC_PREVIEW_TEXT|*-->
-		<!--[if !gte mso 9]><!----><span class="mcnPreviewText" style="display:none; font-size:0px; line-height:0px; max-height:0px; max-width:0px; opacity:0; overflow:hidden; visibility:hidden; mso-hide:all;">*|MC_PREVIEW_TEXT|*</span><!--<![endif]-->
-		<!--*|END:IF|*-->
-        <center>
-            <table align="center" border="0" cellpadding="0" cellspacing="0" height="100%" width="100%" id="bodyTable">
-                <tr>
-                    <td align="center" valign="top" id="bodyCell">
-                        <!-- BEGIN TEMPLATE // -->
-                        <table border="0" cellpadding="0" cellspacing="0" width="100%">
-							<tr>
-								<td align="center" valign="top" id="templateHeader" data-template-container>
-									<!--[if gte mso 9]>
-									<table align="center" border="0" cellspacing="0" cellpadding="0" width="600" style="width:600px;">
-									<tr>
-									<td align="center" valign="top" width="600" style="width:600px;">
-									<![endif]-->
-									<table align="center" border="0" cellpadding="0" cellspacing="0" width="100%" class="templateContainer">
-										<tr>
-                                			<td valign="top" class="headerContainer"><table border="0" cellpadding="0" cellspacing="0" width="100%" class="mcnImageBlock" style="min-width:100%;">
-    <tbody class="mcnImageBlockOuter">
+}</style>
+</head>
+<body>
+  <!--*|IF:MC_PREVIEW_TEXT|*-->
+	<!--[if !gte mso 9]><!---->
+  <span class="mcnPreviewText" style="display:none; font-size:0px; line-height:0px; max-height:0px; max-width:0px; opacity:0; overflow:hidden; visibility:hidden; mso-hide:all;">*|MC_PREVIEW_TEXT|*</span><!--<![endif]-->
+	<!--*|END:IF|*-->
+  <center>
+    <table align="center" border="0" cellpadding="0" cellspacing="0" height="100%" width="100%" id="bodyTable">
+      <tr>
+        <td align="center" valign="top" id="bodyCell">
+          <!-- BEGIN TEMPLATE // -->
+          <table border="0" cellpadding="0" cellspacing="0" width="100%">
             <tr>
-                <td valign="top" style="padding:9px" class="mcnImageBlockInner">
-                    <table align="left" width="100%" border="0" cellpadding="0" cellspacing="0" class="mcnImageContentContainer" style="min-width:100%;">
-                        <tbody><tr>
-                            <td class="mcnImageContent" valign="top" style="padding-right: 9px; padding-left: 9px; padding-top: 0; padding-bottom: 0; text-align:center;">
-
-                                    <a href="http://latio.co" title="" class="" target="_blank">
-                                        <img align="center" alt="" src="https://gallery.mailchimp.com/dcbb227a0d1756a59e564b1ad/images/52bf57a4-54ce-42d3-a99a-8adbe369fbed.png" width="150" style="max-width:150px; padding-bottom: 0; display: inline !important; vertical-align: bottom;" class="mcnImage">
-                                    </a>
-
+              <td align="center" valign="top" id="templateHeader" data-template-container>
+                <!--[if gte mso 9]>
+                <table align="center" border="0" cellspacing="0" cellpadding="0" width="600" style="width:600px;">
+								<tr>
+								<td align="center" valign="top" width="600" style="width:600px;">
+								<![endif]-->
+								<table align="center" border="0" cellpadding="0" cellspacing="0" width="100%" class="templateContainer">
+                  <tr>
+                    <td valign="top" class="headerContainer">
+                      <table border="0" cellpadding="0" cellspacing="0" width="100%" class="mcnImageBlock" style="min-width:100%;">
+                        <tbody class="mcnImageBlockOuter">
+                          <tr>
+                            <td valign="top" style="padding:9px" class="mcnImageBlockInner">
+                              <table align="left" width="100%" border="0" cellpadding="0" cellspacing="0" class="mcnImageContentContainer" style="min-width:100%;">
+                                <tbody>
+                                  <tr>
+                                    <td class="mcnImageContent" valign="top" style="padding-right: 9px; padding-left: 9px; padding-top: 0; padding-bottom: 0; text-align:center;">
+                                      <a href="http://latio.co" title="" class="" target="_blank">
+                                        <img align="center" alt="" src="https://latio.co/images/latio-mailing-logo.png" width="150" style="max-width:150px; padding-bottom: 0; display: inline !important; vertical-align: bottom;" class="mcnImage">                                        </a>
+                                    </td>
+                                  </tr>
+                                </tbody>
+                              </table>
                             </td>
-                        </tr>
-                    </tbody></table>
-                </td>
-            </tr>
-    </tbody>
-</table></td>
-										</tr>
-									</table>
-									<!--[if gte mso 9]>
-									</td>
+                          </tr>
+                        </tbody>
+                      </table>
+                    </td>
 									</tr>
-									</table>
-									<![endif]-->
+								</table>
+								<!--[if gte mso 9]>
 								</td>
-                            </tr>
+								</tr>
+								</table>
+								<![endif]-->
+              </td>
+              </tr>
 							<tr>
-								<td align="center" valign="top" id="templateBody" data-template-container>
-									<!--[if gte mso 9]>
-									<table align="center" border="0" cellspacing="0" cellpadding="0" width="600" style="width:600px;">
-									<tr>
-									<td align="center" valign="top" width="600" style="width:600px;">
-									<![endif]-->
-									<table align="center" border="0" cellpadding="0" cellspacing="0" width="100%" class="templateContainer">
-										<tr>
-                                			<td valign="top" class="bodyContainer">
+                <td align="center" valign="top" id="templateBody" data-template-container>
+								<!--[if gte mso 9]>
+								<table align="center" border="0" cellspacing="0" cellpadding="0" width="600" style="width:600px;">
+								<tr>
+								<td align="center" valign="top" width="600" style="width:600px;">
+								<![endif]-->
+								<table align="center" border="0" cellpadding="0" cellspacing="0" width="100%" class="templateContainer">
+                  <tr>
+                    <td valign="top" class="bodyContainer">
+                      <div style="border:1px solid #e2e2e2;">
+                        <table border="0" cellpadding="0" cellspacing="0" width="100%" class="mcnImageBlock" style="min-width:100%;">
+                          <tbody class="mcnImageBlockOuter">
+                            <tr>
+                              <td valign="top" class="mcnImageBlockInner">
+                                <table align="left" width="100%" border="0" cellpadding="0" cellspacing="0" class="mcnImageContentContainer" style="min-width:100%;">
+                                  <tbody>
+                                    <tr>
+                                      <td class="mcnImageContent" valign="top" style="padding-top: 0; padding-bottom: 0; text-align:center;">
+                                        <?php echo "<img align='center' src='$site_url$uploads_path$main_image_path' width='564' style='width:100%; padding-bottom: 0; display: inline !important; vertical-align: bottom;' class='mcnImage'>"?>
+                                      </td>
+                                    </tr>
+                                  </tbody>
+                                </table>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                        <table border="0" cellpadding="0" cellspacing="0" width="100%" class="mcnTextBlock" style="min-width:100%;">
+                          <tbody class="mcnTextBlockOuter">
+                            <tr>
+                              <td valign="top" class="mcnTextBlockInner" style="padding-top:9px;">
+                              <!--[if mso]>
+                              <table align="left" border="0" cellspacing="0" cellpadding="0" width="100%" style="width:100%;">
+  				                    <tr>
+  				                    <![endif]-->
 
-<div style="border:1px solid #e2e2e2;">
-  <table border="0" cellpadding="0" cellspacing="0" width="100%" class="mcnImageBlock" style="min-width:100%;">
-    <tbody class="mcnImageBlockOuter">
-            <tr>
-                <td valign="top" class="mcnImageBlockInner">
-                    <table align="left" width="100%" border="0" cellpadding="0" cellspacing="0" class="mcnImageContentContainer" style="min-width:100%;">
-                        <tbody><tr>
-                            <td class="mcnImageContent" valign="top" style="padding-top: 0; padding-bottom: 0; text-align:center;">
-                              <?php echo "<img align='center' src='$uploads_path$main_image_path' width='564' style='width:100%; padding-bottom: 0; display: inline !important; vertical-align: bottom;' class='mcnImage'>"?>
-                            </td>
-                        </tr>
-                    </tbody></table>
-                </td>
-            </tr>
-    </tbody>
-</table>
-  <table border="0" cellpadding="0" cellspacing="0" width="100%" class="mcnTextBlock" style="min-width:100%;">
-      <tbody class="mcnTextBlockOuter">
-          <tr>
-              <td valign="top" class="mcnTextBlockInner" style="padding-top:9px;">
-                	<!--[if mso]>
-  				<table align="left" border="0" cellspacing="0" cellpadding="0" width="100%" style="width:100%;">
-  				<tr>
-  				<![endif]-->
-
-  				<!--[if mso]>
-  				<td valign="top" width="600" style="width:600px;">
-  				<![endif]-->
-                  <table align="left" border="0" cellpadding="0" cellspacing="0" style="max-width:100%; min-width:100%;" width="100%" class="mcnTextContentContainer">
+  				                    <!--[if mso]>
+  				                    <td valign="top" width="600" style="width:600px;">
+  				                    <![endif]-->
+                              <table align="left" border="0" cellpadding="0" cellspacing="0" style="max-width:100%; min-width:100%;" width="100%" class="mcnTextContentContainer">
                       <tbody><tr>
 
                           <td valign="top" class="mcnTextContent" style="padding-top:6px; padding-right:18px; padding-bottom:9px; padding-left:18px;">
@@ -628,9 +623,7 @@ $publish_date = $_SESSION['inputs']['publish-date'];
 
                           <td valign="top" class="mcnTextContent" style="padding-top:0; padding-right:18px; padding-bottom:9px; padding-left:18px;">
 
-                              <span style="color:#000000"><span style="font-size:14px"><span style="font-family:open sans,helvetica neue,helvetica,arial,sans-serif">Muchos coinciden en que los pagos per se no son una propuesta de valor tan atractiva para los usuarios y las aplicaciones necesitan funcionalidades más amplias para ganar una masa crítica de usuarios.<br>
-  Lo interesante del desarrollo de ecosistemas más amplios es que bancos, fintechs y otras empresas de tecnologías pueden dejar de verse tanto como competidores existenciales y encontrar vías de complementación que son cada vez más evidentes.<br>
-  Un claro ejemplo es la política de algunos prestadores de pagos tradicionales que comienzan a abrir su tecnología de procesamiento a través de APIs y así le dejan cada vez más el fronting con usuarios a sus nuevos aliados no financieros, como una red social, que no solo tienen enormes masas de usuarios sino que también saben lidiar mucho mejor con su experiencia.</span></span></span><br>
+                              <span style="color:#000000"><span style="font-size:14px"><span style="font-family:open sans,helvetica neue,helvetica,arial,sans-serif"><?php echo $description; ?></span></span></span><br>
   &nbsp;
                           </td>
                       </tr>
@@ -738,8 +731,8 @@ $publish_date = $_SESSION['inputs']['publish-date'];
                         <td valign="top" class="mcnTextContent" style="padding-top:0; padding-right:18px; padding-bottom:9px; padding-left:18px;">
 
                             <br>
-<span style="font-family:roboto,helvetica neue,helvetica,arial,sans-serif"><span style="font-size:15px"><a href="http://www.infobae.com/economia/finanzas-y-negocios/2017/09/30/por-que-el-dueno-de-mercadolibre-le-declaro-la-guerra-a-los-bancos/" target="_blank"><strong>Mercado Libre le declaró la guerra a los bancos &gt;&nbsp;</strong></a></span></span><br>
-<span style="font-family:open sans,helvetica neue,helvetica,arial,sans-serif"><span style="font-size:14px"><span style="color:#000000">Porqué Mercado Libre puede ser uno de los jugadores más importantes del mundo financiero en América Latina.</span></span></span><br>
+<span style="font-family:roboto,helvetica neue,helvetica,arial,sans-serif"><span style="font-size:15px"><?php echo "<a href='$t3_n1_link' target='_blank'>"; ?><strong><?php echo $t3_n1_title; ?> &gt;&nbsp;</strong></a></span></span><br>
+<span style="font-family:open sans,helvetica neue,helvetica,arial,sans-serif"><span style="font-size:14px"><span style="color:#000000"><?php echo $t3_n1_desc; ?></span></span></span><br>
 &nbsp;
                         </td>
                     </tr>
@@ -791,8 +784,8 @@ $publish_date = $_SESSION['inputs']['publish-date'];
                         <td valign="top" class="mcnTextContent" style="padding-top:0; padding-right:18px; padding-bottom:9px; padding-left:18px;">
 
                             <br>
-<span style="font-family:roboto,helvetica neue,helvetica,arial,sans-serif"><span style="font-size:15px"><a href="https://techcrunch.com/gallery/heres-everything-amazon-announced-today/slide/6/?utm_medium=TCnewsletter" target="_blank"><strong>Los nuevos lanzamientos de Amazon &gt;</strong></a></span></span><br>
-<span style="font-family:open sans,helvetica neue,helvetica,arial,sans-serif"><span style="color:#000000"><span style="font-size:14px">La mayoría gira en torno a Echo, el suceso con el que el gigante tecnológico llegó a los hogares para quedarse.</span></span></span><br>
+<span style="font-family:roboto,helvetica neue,helvetica,arial,sans-serif"><span style="font-size:15px"><?php echo "<a href='$t3_n2_link' target='_blank'>"; ?><strong><?php echo $t3_n2_title; ?> &gt;</strong></a></span></span><br>
+<span style="font-family:open sans,helvetica neue,helvetica,arial,sans-serif"><span style="color:#000000"><span style="font-size:14px"><?php echo $t3_n2_desc; ?></span></span></span><br>
 &nbsp;
                         </td>
                     </tr>
@@ -844,8 +837,8 @@ $publish_date = $_SESSION['inputs']['publish-date'];
                         <td valign="top" class="mcnTextContent" style="padding-top:0; padding-right:18px; padding-bottom:9px; padding-left:18px;">
 
                             <br>
-<a href="http:// https://techcrunch.com/2017/09/28/everything-spacex-revealed-about-its-updated-plan-to-reach-mars-by-2022/?utm_medium=TCnewsletter" target="_blank"><span style="font-family:roboto,helvetica neue,helvetica,arial,sans-serif"><span style="font-size:15px"><strong>El nuevo plan de SpaceX para llegar a Marte &gt;</strong></span></span></a><br>
-<span style="font-family:open sans,helvetica neue,helvetica,arial,sans-serif"><span style="color:#000000"><span style="font-size:14px">Elon Musk anunció algunos ajustes interesantes en su visión para hacer de los humanos una especie interplanetaria</span></span></span><span style="font-family:open sans,helvetica neue,helvetica,arial,sans-serif"><span style="color:#000000"><span style="font-size:14px">.</span></span></span><br>
+<?php echo "<a href='$t3_n3_link' target='_blank'>"; ?><span style="font-family:roboto,helvetica neue,helvetica,arial,sans-serif"><span style="font-size:15px"><strong><?php echo $t3_n3_title; ?> &gt;</strong></span></span></a><br>
+<span style="font-family:open sans,helvetica neue,helvetica,arial,sans-serif"><span style="color:#000000"><span style="font-size:14px"><?php echo $t3_n3_desc; ?></span></span></span><span style="font-family:open sans,helvetica neue,helvetica,arial,sans-serif"><span style="color:#000000"><span style="font-size:14px">.</span></span></span><br>
 &nbsp;
                         </td>
                     </tr>
@@ -962,139 +955,163 @@ $publish_date = $_SESSION['inputs']['publish-date'];
 				<!--[if mso]>
 				<td valign="top" width="600" style="width:600px;">
 				<![endif]-->
-                <table align="left" border="0" cellpadding="0" cellspacing="0" style="max-width:100%; min-width:100%;" width="100%" class="mcnTextContentContainer">
-                    <tbody><tr>
-
-                        <td valign="top" class="mcnTextContent" style="padding-top:0; padding-right:18px; padding-bottom:9px; padding-left:18px;">
-
-                            <br>
-<a href="http://latio.co/pde" target="_blank"><span style="font-family:roboto,helvetica neue,helvetica,arial,sans-serif"><span style="font-size:15px"><strong>Programa de Entrepreneurship &gt;</strong></span></span></a><br>
-<span style="font-family:open sans,helvetica neue,helvetica,arial,sans-serif"><span style="color:#000000"><span style="font-size:14px">En Latio comenzamos la cuarta edición de nuestro programa insignia.</span></span><br>
-<span style="color:#A9A9A9"><span style="font-size:14px">7/10 · Programa · Pago · Becas · CABA</span></span></span><br>
-&nbsp;
-                        </td>
-                    </tr>
-                </tbody></table>
+        <table align="left" border="0" cellpadding="0" cellspacing="0" style="max-width:100%; min-width:100%;" width="100%" class="mcnTextContentContainer">
+          <tbody>
+            <tr>
+              <td valign="top" class="mcnTextContent" style="padding-top:0; padding-right:18px; padding-bottom:9px; padding-left:18px;">
+                <br>
+                  <?php echo "<a href='$e1_link' target='_blank'>"; ?>
+                    <span style="font-family:roboto,helvetica neue,helvetica,arial,sans-serif">
+                      <span style="font-size:15px">
+                        <strong><?php echo $e1_title; ?> &gt;</strong>
+                      </span>
+                    </span>
+                  </a>
+                <br>
+                <span style="font-family:open sans,helvetica neue,helvetica,arial,sans-serif">
+                  <span style="color:#000000">
+                    <span style="font-size:14px">
+                      <?php echo $e1_desc; ?>
+                    </span>
+                  </span>
+                  <br>
+                  <span style="color:#A9A9A9">
+                    <span style="font-size:14px">
+                      <?php echo $e1_date . " · " . $e1_type . " · " . $e1_fee . " · " . $e1_location; ?>
+                    </span>
+                  </span>
+                </span>
+                <br>
+                &nbsp;
+                </td>
+              </tr>
+            </tbody>
+          </table>
 				<!--[if mso]>
 				</td>
 				<![endif]-->
 
-				<!--[if mso]>
-				</tr>
-				</table>
-				<![endif]-->
-            </td>
-        </tr>
-    </tbody>
-</table><table border="0" cellpadding="0" cellspacing="0" width="100%" class="mcnDividerBlock" style="min-width:100%;">
-    <tbody class="mcnDividerBlockOuter">
-        <tr>
-            <td class="mcnDividerBlockInner" style="min-width:100%; padding:18px;">
+        <table border="0" cellpadding="0" cellspacing="0" width="100%" class="mcnDividerBlock" style="min-width:100%;">
+          <tbody class="mcnDividerBlockOuter">
+            <tr>
+              <td class="mcnDividerBlockInner" style="min-width:100%; padding:18px;">
                 <table class="mcnDividerContent" border="0" cellpadding="0" cellspacing="0" width="100%" style="min-width: 100%;border-top: 2px solid #EAEAEA;">
-                    <tbody><tr>
-                        <td>
-                            <span></span>
-                        </td>
+                  <tbody>
+                    <tr>
+                      <td>
+                        <span></span>
+                      </td>
                     </tr>
-                </tbody></table>
-<!--
-                <td class="mcnDividerBlockInner" style="padding: 18px;">
-                <hr class="mcnDividerContent" style="border-bottom-color:none; border-left-color:none; border-right-color:none; border-bottom-width:0; border-left-width:0; border-right-width:0; margin-top:0; margin-right:0; margin-bottom:0; margin-left:0;" />
--->
-            </td>
-        </tr>
-    </tbody>
-</table><table border="0" cellpadding="0" cellspacing="0" width="100%" class="mcnTextBlock" style="min-width:100%;">
-    <tbody class="mcnTextBlockOuter">
-        <tr>
-            <td valign="top" class="mcnTextBlockInner" style="padding-top:9px;">
-              	<!--[if mso]>
-				<table align="left" border="0" cellspacing="0" cellpadding="0" width="100%" style="width:100%;">
-				<tr>
-				<![endif]-->
+                  </tbody>
+                </table>
+              </td>
+            </tr>
+          </tbody>
+        </table>
 
-				<!--[if mso]>
+        <!--[if mso]>
 				<td valign="top" width="600" style="width:600px;">
 				<![endif]-->
-                <table align="left" border="0" cellpadding="0" cellspacing="0" style="max-width:100%; min-width:100%;" width="100%" class="mcnTextContentContainer">
-                    <tbody><tr>
+        <table align="left" border="0" cellpadding="0" cellspacing="0" style="max-width:100%; min-width:100%;" width="100%" class="mcnTextContentContainer">
+          <tbody>
+            <tr>
+              <td valign="top" class="mcnTextContent" style="padding-top:0; padding-right:18px; padding-bottom:9px; padding-left:18px;">
+                <br>
+                  <?php echo "<a href='$e2_link' target='_blank'>"; ?>
+                    <span style="font-family:roboto,helvetica neue,helvetica,arial,sans-serif">
+                      <span style="font-size:15px">
+                        <strong><?php echo $e2_title; ?> &gt;</strong>
+                      </span>
+                    </span>
+                  </a>
+                <br>
+                <span style="font-family:open sans,helvetica neue,helvetica,arial,sans-serif">
+                  <span style="color:#000000">
+                    <span style="font-size:14px">
+                      <?php echo $e2_desc; ?>
+                    </span>
+                  </span>
+                  <br>
+                  <span style="color:#A9A9A9">
+                    <span style="font-size:14px">
+                      <?php echo $e2_date . " · " . $e2_type . " · " . $e2_fee . " · " . $e2_location; ?>
+                    </span>
+                  </span>
+                </span>
+                <br>
+                &nbsp;
+                </td>
+              </tr>
+            </tbody>
+          </table>
+				  <!--[if mso]>
+				  </td>
+				  <![endif]-->
 
-                        <td valign="top" class="mcnTextContent" style="padding-top:0; padding-right:18px; padding-bottom:9px; padding-left:18px;">
-
-                            <br>
-<a href="http:// https://www.eventbrite.com/e/aws-startup-day-tickets-37810566422?aff=es2" target="_blank"><span style="font-family:roboto,helvetica neue,helvetica,arial,sans-serif"><span style="font-size:15px"><strong>Amazon Web Services Startup Day &gt;</strong></span></span></a><br>
-<span style="font-family:open sans,helvetica neue,helvetica,arial,sans-serif"><span style="color:#000000"><span style="font-size:14px">Avances en la tecnología de AWS, mesas redondas para CTOs, beneficios para startups y más.</span></span></span><br>
-<span style="font-family:open sans,helvetica neue,helvetica,arial,sans-serif"><span style="color:#A9A9A9"><span style="font-size:14px">4/10 · Evento · Gratuito · CABA</span></span></span><br>
-&nbsp;
-                        </td>
-                    </tr>
-                </tbody></table>
-				<!--[if mso]>
-				</td>
-				<![endif]-->
-
-				<!--[if mso]>
-				</tr>
-				</table>
-				<![endif]-->
-            </td>
-        </tr>
-    </tbody>
-</table><table border="0" cellpadding="0" cellspacing="0" width="100%" class="mcnDividerBlock" style="min-width:100%;">
-    <tbody class="mcnDividerBlockOuter">
-        <tr>
-            <td class="mcnDividerBlockInner" style="min-width:100%; padding:18px;">
-                <table class="mcnDividerContent" border="0" cellpadding="0" cellspacing="0" width="100%" style="min-width: 100%;border-top: 2px solid #EAEAEA;">
-                    <tbody><tr>
+          <table border="0" cellpadding="0" cellspacing="0" width="100%" class="mcnDividerBlock" style="min-width:100%;">
+            <tbody class="mcnDividerBlockOuter">
+              <tr>
+                <td class="mcnDividerBlockInner" style="min-width:100%; padding:18px;">
+                  <table class="mcnDividerContent" border="0" cellpadding="0" cellspacing="0" width="100%" style="min-width: 100%;border-top: 2px solid #EAEAEA;">
+                    <tbody>
+                      <tr>
                         <td>
-                            <span></span>
+                          <span></span>
                         </td>
-                    </tr>
-                </tbody></table>
-<!--
-                <td class="mcnDividerBlockInner" style="padding: 18px;">
-                <hr class="mcnDividerContent" style="border-bottom-color:none; border-left-color:none; border-right-color:none; border-bottom-width:0; border-left-width:0; border-right-width:0; margin-top:0; margin-right:0; margin-bottom:0; margin-left:0;" />
--->
+                      </tr>
+                    </tbody>
+                  </table>
+                </td>
+              </tr>
+            </tbody>
+          </table>
+
+          <!--[if mso]>
+  				<td valign="top" width="600" style="width:600px;">
+  				<![endif]-->
+          <table align="left" border="0" cellpadding="0" cellspacing="0" style="max-width:100%; min-width:100%;" width="100%" class="mcnTextContentContainer">
+            <tbody>
+              <tr>
+                <td valign="top" class="mcnTextContent" style="padding-top:0; padding-right:18px; padding-bottom:9px; padding-left:18px;">
+                  <br>
+                    <?php echo "<a href='$e3_link' target='_blank'>"; ?>
+                      <span style="font-family:roboto,helvetica neue,helvetica,arial,sans-serif">
+                        <span style="font-size:15px">
+                          <strong><?php echo $e3_title; ?> &gt;</strong>
+                        </span>
+                      </span>
+                    </a>
+                  <br>
+                  <span style="font-family:open sans,helvetica neue,helvetica,arial,sans-serif">
+                    <span style="color:#000000">
+                      <span style="font-size:14px">
+                        <?php echo $e3_desc; ?>
+                      </span>
+                    </span>
+                    <br>
+                    <span style="color:#A9A9A9">
+                      <span style="font-size:14px">
+                        <?php echo $e3_date . " · " . $e3_type . " · " . $e3_fee . " · " . $e3_location; ?>
+                      </span>
+                    </span>
+                  </span>
+                  <br>
+                  &nbsp;
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+  				  <!--[if mso]>
+  				  </td>
+  				  <![endif]-->
+
             </td>
         </tr>
     </tbody>
-</table><table border="0" cellpadding="0" cellspacing="0" width="100%" class="mcnTextBlock" style="min-width:100%;">
-    <tbody class="mcnTextBlockOuter">
-        <tr>
-            <td valign="top" class="mcnTextBlockInner" style="padding-top:9px;">
-              	<!--[if mso]>
-				<table align="left" border="0" cellspacing="0" cellpadding="0" width="100%" style="width:100%;">
-				<tr>
-				<![endif]-->
+</table>
 
-				<!--[if mso]>
-				<td valign="top" width="600" style="width:600px;">
-				<![endif]-->
-                <table align="left" border="0" cellpadding="0" cellspacing="0" style="max-width:100%; min-width:100%;" width="100%" class="mcnTextContentContainer">
-                    <tbody><tr>
 
-                        <td valign="top" class="mcnTextContent" style="padding-top:0; padding-right:18px; padding-bottom:9px; padding-left:18px;">
-
-                            <br>
-<a href="https://www.eventbrite.com.ar/e/bitcoin-para-todos-charla-educativa-introductoria-sin-cargo-tickets-38282569195?aff=es2" target="_blank"><span style="font-family:roboto,helvetica neue,helvetica,arial,sans-serif"><span style="font-size:15px"><strong>Bitcoin para todos &gt;</strong></span></span></a><br>
-<span style="font-family:open sans,helvetica neue,helvetica,arial,sans-serif"><span style="color:#000000"><span style="font-size:14px">Qué es el bitcoin, cómo usarlo y cual es su impacto en nuestras vidas.</span></span></span><br>
-<span style="font-family:open sans,helvetica neue,helvetica,arial,sans-serif"><span style="color:#A9A9A9"><span style="font-size:14px">5/10 · Evento · Gratuito · CABA</span></span></span><br>
-&nbsp;
-                        </td>
-                    </tr>
-                </tbody></table>
-				<!--[if mso]>
-				</td>
-				<![endif]-->
-
-				<!--[if mso]>
-				</tr>
-				</table>
-				<![endif]-->
-            </td>
-        </tr>
-    </tbody>
-</table></td>
+</td>
 										</tr>
 									</table>
 									<!--[if gte mso 9]>
@@ -1302,6 +1319,7 @@ $publish_date = $_SESSION['inputs']['publish-date'];
 <br>
 *|IF:REWARDS|* *|HTML:REWARDS|* *|END:IF|*
                         </td>
+
                     </tr>
                 </tbody></table>
 				<!--[if mso]>
@@ -1333,3 +1351,7 @@ $publish_date = $_SESSION['inputs']['publish-date'];
         </center>
     </body>
 </html>
+</div>
+<?php
+// download_file($site_url, "layout1.php");
+?>

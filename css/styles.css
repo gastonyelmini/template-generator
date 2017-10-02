@@ -49,7 +49,7 @@ table {
 h1, h2, h3, h4, h5, h6 {
   font-family: 'Roboto', sans-serif;
 }
-p, label, input {
+p, label, input, textarea {
   font-family: 'Open Sans', sans-serif;
 }
 /*END css global condigurations*/
@@ -59,6 +59,9 @@ p, label, input {
 */
 .main-container {
   width: 100%;
+}
+.mark-color {
+  color: #00d7e6;
 }
 
 /*Form conditions*/
@@ -79,13 +82,14 @@ p, label, input {
 }
 .form-content {
   margin-top: 40px;
+  margin-bottom: 40px;
   padding-left: 15px;
   padding-right: 15px;
 }
 .form-content label {
   display: block;
   margin-top: 30px;
-  font-size: 17px;
+  font-size: 15px;
 }
 .form-content input {
   display: block;
@@ -93,9 +97,15 @@ p, label, input {
   margin-top:15px;
   border-radius: 5px;
 }
+.form-content textarea {
+  display: block;
+  width: 100%;
+  margin-top:15px;
+  border-radius: 5px;
+}
 .text-input {
   padding: 10px 15px;
-  border: 2px solid #00d7e6;
+  border: 1px solid #00d7e6;
 }
 .generate {
   border: none;
@@ -104,5 +114,36 @@ p, label, input {
   background-color: #00d7e6;
   color: #fff;
   margin-top: 20px;
+  font-weight: bold;
   text-transform: uppercase;
 }
+.uppercase {
+  text-transform: uppercase;
+  font-weight: bold;
+}
+
+/*START media queries*/
+@media(min-width: 992px) {
+  .form-container {
+    width: 50%;
+    margin: 0 auto;
+    padding-top: 50px;
+  }
+  .form-content {
+    margin-top: 80px;
+  }
+  .half {
+    width: 49% !important;
+    float: left;
+  }
+  .half-margin {
+    margin-right: 2%;
+  }
+  .event {
+    padding-bottom: 100px;
+  }
+  .event-container {
+    padding-bottom: 30px;
+  }
+}
+/*END media queries*/
