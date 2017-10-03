@@ -679,7 +679,7 @@ if ($action === "generate") {
         <table align="left" border="0" cellpadding="0" cellspacing="0" style="max-width:100%; min-width:100%;" width="100%" class="mcnTextContentContainer">
 					<tbody>
 						<tr>
-							<td valign="top" class="mcnTextContent" style="padding-top:0; padding-right:18px; padding-bottom:9px; padding-left:18px;">}
+							<td valign="top" class="mcnTextContent" style="padding-top:0; padding-right:18px; padding-bottom:9px; padding-left:18px;">
 								<div style="text-align: center;">
 									<br>
 									<span style="color:#000000">
@@ -1139,7 +1139,7 @@ if ($action === "generate") {
 									<br>
 									<span style="color:#000000">
 										<span style="font-family:roboto,helvetica neue,helvetica,arial,sans-serif">
-											<strong style="text-transform: uppercase;">Conocé la <a href="bit.ly/agendalatio" target="_blank" style="text-decoration: none;"><span style="color:#00d7e6;">agenda completa</span></a> y sumá tu evento </strong>
+											<strong style="text-transform: uppercase;">Conocé la <a href="http://bit.ly/agendalatio" target="_blank" style="text-decoration: none;"><span style="color:#00d7e6;">agenda completa y sumá tu evento</span></a></strong>
 										</span>
 									</span>
 								</div>
