@@ -665,10 +665,10 @@ if ($action === "generate") {
 </div>
 
 <table border="0" cellpadding="0" cellspacing="0" width="100%" class="mcnTextBlock" style="min-width:100%;">
-    <tbody class="mcnTextBlockOuter">
-        <tr>
-            <td valign="top" class="mcnTextBlockInner" style="padding-top:9px;">
-              	<!--[if mso]>
+	<tbody class="mcnTextBlockOuter">
+		<tr>
+			<td valign="top" class="mcnTextBlockInner" style="padding-top:9px;">
+				<!--[if mso]>
 				<table align="left" border="0" cellspacing="0" cellpadding="0" width="100%" style="width:100%;">
 				<tr>
 				<![endif]-->
@@ -676,18 +676,23 @@ if ($action === "generate") {
 				<!--[if mso]>
 				<td valign="top" width="600" style="width:600px;">
 				<![endif]-->
-                <table align="left" border="0" cellpadding="0" cellspacing="0" style="max-width:100%; min-width:100%;" width="100%" class="mcnTextContentContainer">
-                    <tbody><tr>
-
-                        <td valign="top" class="mcnTextContent" style="padding-top:0; padding-right:18px; padding-bottom:9px; padding-left:18px;">
-
-                            <div style="text-align: center;"><br>
-<span style="color:#000000"><span style="font-family:roboto,helvetica neue,helvetica,arial,sans-serif">TOP 3<br>
-<strong>NOTICIAS DE LA SEMANA</strong></span></span></div>
-
-                        </td>
-                    </tr>
-                </tbody></table>
+        <table align="left" border="0" cellpadding="0" cellspacing="0" style="max-width:100%; min-width:100%;" width="100%" class="mcnTextContentContainer">
+					<tbody>
+						<tr>
+							<td valign="top" class="mcnTextContent" style="padding-top:0; padding-right:18px; padding-bottom:9px; padding-left:18px;">}
+								<div style="text-align: center;">
+									<br>
+									<span style="color:#000000">
+										<span style="font-family:roboto,helvetica neue,helvetica,arial,sans-serif">TOP 3
+											<br>
+											<strong>NOTICIAS DE LA SEMANA</strong>
+										</span>
+									</span>
+								</div>
+							</td>
+						</tr>
+					</tbody>
+				</table>
 				<!--[if mso]>
 				</td>
 				<![endif]-->
@@ -699,7 +704,8 @@ if ($action === "generate") {
             </td>
         </tr>
     </tbody>
-</table><table border="0" cellpadding="0" cellspacing="0" width="100%" class="mcnDividerBlock" style="min-width:100%;">
+</table>
+<table border="0" cellpadding="0" cellspacing="0" width="100%" class="mcnDividerBlock" style="min-width:100%;">
     <tbody class="mcnDividerBlockOuter">
         <tr>
             <td class="mcnDividerBlockInner" style="min-width:100%; padding:18px;">
@@ -1113,7 +1119,46 @@ if ($action === "generate") {
         </tr>
     </tbody>
 </table>
+<table border="0" cellpadding="0" cellspacing="0" width="100%" class="mcnTextBlock" style="min-width:100%;">
+	<tbody class="mcnTextBlockOuter">
+		<tr>
+			<td valign="top" class="mcnTextBlockInner" style="padding-top:9px;">
+				<!--[if mso]>
+				<table align="left" border="0" cellspacing="0" cellpadding="0" width="100%" style="width:100%;">
+				<tr>
+				<![endif]-->
 
+				<!--[if mso]>
+				<td valign="top" width="600" style="width:600px;">
+				<![endif]-->
+        <table align="left" border="0" cellpadding="0" cellspacing="0" style="max-width:100%; min-width:100%;" width="100%" class="mcnTextContentContainer">
+					<tbody>
+						<tr>
+							<td valign="top" class="mcnTextContent" style="padding-top:0; padding-right:18px; padding-bottom:9px; padding-left:18px;">
+								<div style="text-align: center;">
+									<br>
+									<span style="color:#000000">
+										<span style="font-family:roboto,helvetica neue,helvetica,arial,sans-serif">
+											<strong style="text-transform: uppercase;">Conocé la <a href="bit.ly/agendalatio" target="_blank" style="text-decoration: none;"><span style="color:#00d7e6;">agenda completa</span></a> y sumá tu evento </strong>
+										</span>
+									</span>
+								</div>
+							</td>
+						</tr>
+					</tbody>
+				</table>
+				<!--[if mso]>
+				</td>
+				<![endif]-->
+
+				<!--[if mso]>
+				</tr>
+				</table>
+				<![endif]-->
+            </td>
+        </tr>
+    </tbody>
+</table>
 
 </td>
 										</tr>
@@ -1299,7 +1344,9 @@ if ($action === "generate") {
             </td>
         </tr>
     </tbody>
-</table><table border="0" cellpadding="0" cellspacing="0" width="100%" class="mcnTextBlock" style="min-width:100%;">
+</table>
+
+<table border="0" cellpadding="0" cellspacing="0" width="100%" class="mcnTextBlock" style="min-width:100%;">
     <tbody class="mcnTextBlockOuter">
         <tr>
             <td valign="top" class="mcnTextBlockInner" style="padding-top:9px;">
