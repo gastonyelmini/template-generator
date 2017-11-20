@@ -15,6 +15,11 @@ $author_twitter = $_SESSION['inputs']['editor-twitter'];
 $publish_date = $_SESSION['inputs']['publish-date'];
 $description = $_SESSION['inputs']['description'];
 
+//Destacado
+$dest_title = $_SESSION['inputs']['dest-title'];
+$dest_desc = $_SESSION['inputs']['dest-desc'];
+$dest_link = $_SESSION['inputs']['dest-link'];
+
 //TOP 3 - NOTICIAS DE LA SEMANA
 
 // Noticia 1

@@ -33,6 +33,12 @@
             <input class="text-input" type="text" name="publish-date" value="" placeholder="Fecha de publicacion" required="true">
             <textarea name="description" class="text-input" rows="8" placeholder="Descripción"></textarea>
 
+            <!-- Destacado semanal -->
+            <label class="uppercase">Ingrese el <span class="mark-color">el destacado</span></label>
+            <input class="text-input" type="text" name="dest-title" value="" placeholder="Ingrese el título" required="true">
+            <input class="text-input" type="text" name="dest-desc" value="" placeholder="Ingrese la descripción" required="true">
+            <input class="text-input" type="text" name="dest-link" value="" placeholder="Ingrese el link" required="true">
+
             <!-- Top 3 - Noticas de la semana -->
             <label class="uppercase">Top 3 - <span class="mark-color">Noticias de la semana</span></label>
             <label>Noticia 1</label>

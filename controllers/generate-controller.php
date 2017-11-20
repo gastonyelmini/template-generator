@@ -38,6 +38,16 @@ $_SESSION['inputs']['publish-date'] = $publish_date;
 $description = $_POST['description'];
 $_SESSION['inputs']['description'] = $description;
 
+//Destacado
+$dest_title = $_POST['dest-title'];
+$_SESSION['inputs']['dest-title'] = $dest_title;
+
+$dest_desc = $_POST['dest-desc'];
+$_SESSION['inputs']['dest-desc'] = $dest_desc;
+
+$dest_link = $_POST['dest-link'];
+$_SESSION['inputs']['dest-link'] = $dest_link;
+
 // Top 3 - Noticias de la semana
 
 //Noticia 1
