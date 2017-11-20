@@ -186,7 +186,6 @@ if ($action === "generate") {
 			/*@editable*/background-position:center;
 			/*@editable*/background-size:cover;
 			/*@editable*/border-top:0;
-			/*@editable*/border-bottom:1px solid #f0f0f0;
 			/*@editable*/padding-top:13px;
 			/*@editable*/padding-bottom:13px;
 		}
@@ -553,107 +552,119 @@ if ($action === "generate") {
 									<![endif]-->
 									<table align="center" border="0" cellpadding="0" cellspacing="0" width="100%" class="templateContainer">
 										<tr>
-                                			<td valign="top" class="bodyContainer"><table border="0" cellpadding="0" cellspacing="0" width="100%" class="mcnImageBlock" style="min-width:100%;">
-    <tbody class="mcnImageBlockOuter">
-            <tr>
-                <td valign="top" style="padding:0px" class="mcnImageBlockInner">
-                    <table align="left" width="100%" border="0" cellpadding="0" cellspacing="0" class="mcnImageContentContainer" style="min-width:100%;">
-                        <tbody><tr>
-                            <td class="mcnImageContent" valign="top" style="padding-right: 0px; padding-left: 0px; padding-top: 0; padding-bottom: 0; text-align:center;">
-																				<img src="<?php echo "../" . $uploads_path . $main_image_path; ?>" width="600" style="max-width:800px; padding-bottom: 0; display: inline !important; vertical-align: bottom;" class="mcnImage"/>
-                            </td>
-                        </tr>
-                    </tbody></table>
-                </td>
-            </tr>
-    </tbody>
-</table><table border="0" cellpadding="0" cellspacing="0" width="100%" class="mcnTextBlock" style="min-width:100%;">
-    <tbody class="mcnTextBlockOuter">
-        <tr>
-            <td valign="top" class="mcnTextBlockInner" style="padding-top:9px;">
-              	<!--[if mso]>
-				<table align="left" border="0" cellspacing="0" cellpadding="0" width="100%" style="width:100%;">
-				<tr>
-				<![endif]-->
+											<td valign="top" class="bodyContainer">
 
-				<!--[if mso]>
-				<td valign="top" width="600" style="width:600px;">
-				<![endif]-->
-                <table align="left" border="0" cellpadding="0" cellspacing="0" style="max-width:100%; min-width:100%;" width="100%" class="mcnTextContentContainer">
-                    <tbody><tr>
+												<div style="border: 1px solid #f0f0f0;">
+													<table border="0" cellpadding="0" cellspacing="0" width="100%" class="mcnImageBlock" style="min-width:100%;">
+														<tbody class="mcnImageBlockOuter">
+															<tr>
+	                <td valign="top" style="padding:0px" class="mcnImageBlockInner">
+	                    <table align="left" width="100%" border="0" cellpadding="0" cellspacing="0" class="mcnImageContentContainer" style="min-width:100%;">
+	                        <tbody><tr>
+	                            <td class="mcnImageContent" valign="top" style="padding-right: 0px; padding-left: 0px; padding-top: 0; padding-bottom: 0; text-align:center;">
+																					<img src="<?php echo "../" . $uploads_path . $main_image_path; ?>" width="600" style="max-width:800px; padding-bottom: 0; display: inline !important; vertical-align: bottom;" class="mcnImage"/>
+	                            </td>
+	                        </tr>
+	                    </tbody></table>
+	                </td>
+	            </tr>
+	    </tbody>
+	</table>
 
-                        <td valign="top" class="mcnTextContent" style="padding-top:0; padding-right:18px; padding-bottom:9px; padding-left:18px;">
+	<table border="0" cellpadding="0" cellspacing="0" width="100%" class="mcnTextBlock" style="min-width:100%;">
+	    <tbody class="mcnTextBlockOuter">
+	        <tr>
+	            <td valign="top" class="mcnTextBlockInner" style="padding-top:9px;">
+	              	<!--[if mso]>
+					<table align="left" border="0" cellspacing="0" cellpadding="0" width="100%" style="width:100%;">
+					<tr>
+					<![endif]-->
 
-                            <div style="text-align: center;"><br>
-<span style="color:#000000"><span style="font-family:roboto,helvetica neue,helvetica,arial,sans-serif"><span style="font-size:20px"><strong><?php echo $main_title; ?></strong></span><br>
-<span style="font-size:11px"><em>Por&nbsp;<a href="<?php echo $author_twitter; ?>" target="_blank"><?php echo $author_name; ?></a>&nbsp;en&nbsp;<a href="https://medium.com/latio-reads/tagged/destacados-semanales" target="_blank">#LatioSemanal</a>. <?php echo $publish_date; ?></em></span></span></span></div>
+					<!--[if mso]>
+					<td valign="top" width="600" style="width:600px;">
+					<![endif]-->
+	                <table align="left" border="0" cellpadding="0" cellspacing="0" style="max-width:100%; min-width:100%;" width="100%" class="mcnTextContentContainer">
+	                    <tbody><tr>
 
-                        </td>
-                    </tr>
-                </tbody></table>
-				<!--[if mso]>
-				</td>
-				<![endif]-->
+	                        <td valign="top" class="mcnTextContent" style="padding-top:0; padding-right:18px; padding-bottom:9px; padding-left:18px;">
 
-				<!--[if mso]>
-				</tr>
-				</table>
-				<![endif]-->
-            </td>
-        </tr>
-    </tbody>
-</table><table border="0" cellpadding="0" cellspacing="0" width="100%" class="mcnTextBlock" style="min-width:100%;">
-    <tbody class="mcnTextBlockOuter">
-        <tr>
-            <td valign="top" class="mcnTextBlockInner" style="padding-top:9px;">
-              	<!--[if mso]>
-				<table align="left" border="0" cellspacing="0" cellpadding="0" width="100%" style="width:100%;">
-				<tr>
-				<![endif]-->
+	                            <div style="text-align: center;"><br>
+	<span style="color:#000000"><span style="font-family:roboto,helvetica neue,helvetica,arial,sans-serif"><span style="font-size:20px"><strong><?php echo $main_title; ?></strong></span><br>
+	<span style="font-size:11px"><em>Por&nbsp;<a href="<?php echo $author_twitter; ?>" target="_blank"><?php echo $author_name; ?></a>&nbsp;en&nbsp;<a href="https://medium.com/latio-reads/tagged/destacados-semanales" target="_blank">#LatioSemanal</a>. <?php echo $publish_date; ?></em></span></span></span></div>
 
-				<!--[if mso]>
-				<td valign="top" width="600" style="width:600px;">
-				<![endif]-->
-                <table align="left" border="0" cellpadding="0" cellspacing="0" style="max-width:100%; min-width:100%;" width="100%" class="mcnTextContentContainer">
-                    <tbody><tr>
+	                        </td>
+	                    </tr>
+	                </tbody></table>
+					<!--[if mso]>
+					</td>
+					<![endif]-->
 
-                        <td valign="top" class="mcnTextContent" style="padding-top:0; padding-right:18px; padding-bottom:9px; padding-left:18px;">
+					<!--[if mso]>
+					</tr>
+					</table>
+					<![endif]-->
+	            </td>
+	        </tr>
+	    </tbody>
+	</table>
 
-                            <p dir="ltr"><span style="font-size:14px"><span style="color:#000000">
-                            	<?php echo nl2br($description); ?>
-                            </span></span></p>
+	<table border="0" cellpadding="0" cellspacing="0" width="100%" class="mcnTextBlock" style="min-width:100%;">
+	    <tbody class="mcnTextBlockOuter">
+	        <tr>
+	            <td valign="top" class="mcnTextBlockInner" style="padding-top:9px;">
+	              	<!--[if mso]>
+					<table align="left" border="0" cellspacing="0" cellpadding="0" width="100%" style="width:100%;">
+					<tr>
+					<![endif]-->
 
-                        </td>
-                    </tr>
-                </tbody></table>
-				<!--[if mso]>
-				</td>
-				<![endif]-->
+					<!--[if mso]>
+					<td valign="top" width="600" style="width:600px;">
+					<![endif]-->
+	                <table align="left" border="0" cellpadding="0" cellspacing="0" style="max-width:100%; min-width:100%;" width="100%" class="mcnTextContentContainer">
+	                    <tbody><tr>
 
-				<!--[if mso]>
-				</tr>
-				</table>
-				<![endif]-->
-            </td>
-        </tr>
-    </tbody>
-</table><table border="0" cellpadding="0" cellspacing="0" width="100%" class="mcnButtonBlock" style="min-width:100%;">
-    <tbody class="mcnButtonBlockOuter">
-        <tr>
-            <td style="padding-top:0; padding-right:18px; padding-bottom:18px; padding-left:18px;" valign="top" align="center" class="mcnButtonBlockInner">
-                <table border="0" cellpadding="0" cellspacing="0" class="mcnButtonContentContainer" style="border-collapse: separate !important;border-radius: 3px;background-color: #EAEAEA;">
-                    <tbody>
-                        <tr>
-                            <td align="center" valign="middle" class="mcnButtonContent" style="font-family: Roboto, &quot;Helvetica Neue&quot;, Helvetica, Arial, sans-serif; font-size: 16px; padding: 15px;">
-                                <a class="mcnButton " title="Leer más historias" href="https://medium.com/latio-reads/emprendiendo-por-el-medio-ambiente-13dcb12700c6" target="_blank" style="font-weight: bold;letter-spacing: normal;line-height: 100%;text-align: center;text-decoration: none;color: #FFFFFF;">Leer más historias</a>
-                            </td>
-                        </tr>
-                    </tbody>
-                </table>
-            </td>
-        </tr>
-    </tbody>
-</table><table border="0" cellpadding="0" cellspacing="0" width="100%" class="mcnBoxedTextBlock" style="min-width:100%;">
+	                        <td valign="top" class="mcnTextContent" style="padding-top:0; padding-right:18px; padding-bottom:9px; padding-left:18px;">
+
+	                            <p dir="ltr"><span style="font-size:14px"><span style="color:#000000">
+	                            	<?php echo nl2br($description); ?>
+	                            </span></span></p>
+
+	                        </td>
+	                    </tr>
+	                </tbody></table>
+					<!--[if mso]>
+					</td>
+					<![endif]-->
+
+					<!--[if mso]>
+					</tr>
+					</table>
+					<![endif]-->
+	            </td>
+	        </tr>
+	    </tbody>
+	</table>
+
+	<table border="0" cellpadding="0" cellspacing="0" width="100%" class="mcnButtonBlock" style="min-width:100%;">
+	    <tbody class="mcnButtonBlockOuter">
+	        <tr>
+	            <td style="padding-top:0; padding-right:18px; padding-bottom:18px; padding-left:18px;" valign="top" align="center" class="mcnButtonBlockInner">
+	                <table border="0" cellpadding="0" cellspacing="0" class="mcnButtonContentContainer" style="border-collapse: separate !important;border-radius: 3px;background-color: #EAEAEA;">
+	                    <tbody>
+	                        <tr>
+	                            <td align="center" valign="middle" class="mcnButtonContent" style="font-family: Roboto, &quot;Helvetica Neue&quot;, Helvetica, Arial, sans-serif; font-size: 16px; padding: 15px;">
+	                                <a class="mcnButton " title="Leer más historias" href="https://medium.com/latio-reads/emprendiendo-por-el-medio-ambiente-13dcb12700c6" target="_blank" style="font-weight: bold;letter-spacing: normal;line-height: 100%;text-align: center;text-decoration: none;color: #FFFFFF;">Leer más historias</a>
+	                            </td>
+	                        </tr>
+	                    </tbody>
+	                </table>
+	            </td>
+	        </tr>
+	    </tbody>
+	</table>
+												</div>
+
+<table border="0" cellpadding="0" cellspacing="0" width="100%" class="mcnBoxedTextBlock" style="min-width:100%;">
     <!--[if gte mso 9]>
 	<table align="center" border="0" cellspacing="0" cellpadding="0" width="100%">
 	<![endif]-->
@@ -694,7 +705,9 @@ if ($action === "generate") {
             </td>
         </tr>
     </tbody>
-</table><table border="0" cellpadding="0" cellspacing="0" width="100%" class="mcnTextBlock" style="min-width:100%;">
+</table>
+
+<table border="0" cellpadding="0" cellspacing="0" width="100%" class="mcnTextBlock" style="min-width:100%;">
     <tbody class="mcnTextBlockOuter">
         <tr>
             <td valign="top" class="mcnTextBlockInner" style="padding-top:9px;">
