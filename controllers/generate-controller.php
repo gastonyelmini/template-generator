@@ -38,6 +38,9 @@ $_SESSION['inputs']['publish-date'] = $publish_date;
 $description = $_POST['description'];
 $_SESSION['inputs']['description'] = $description;
 
+$continue_reading = $_POST['continue-reading'];
+$_SESSION['inputs']['continue-reading'] = $continue_reading;
+
 //Destacado
 $dest_title = $_POST['dest-title'];
 $_SESSION['inputs']['dest-title'] = $dest_title;

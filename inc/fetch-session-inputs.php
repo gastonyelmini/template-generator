@@ -14,6 +14,7 @@ $author_name = $_SESSION['inputs']['editor-name'];
 $author_twitter = $_SESSION['inputs']['editor-twitter'];
 $publish_date = $_SESSION['inputs']['publish-date'];
 $description = $_SESSION['inputs']['description'];
+$continue_reading = $_SESSION['inputs']['continue-reading'];
 
 //Destacado
 $dest_title = $_SESSION['inputs']['dest-title'];

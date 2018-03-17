@@ -32,6 +32,7 @@
             <input class="text-input" type="text" name="editor-twitter" value="" placeholder="Twitter de autor" required="true">
             <input class="text-input" type="text" name="publish-date" value="" placeholder="Fecha de publicacion" required="true">
             <textarea name="description" class="text-input" rows="8" placeholder="Descripción"></textarea>
+            <input class="text-input" type="text" name="continue-reading" value="" placeholder="Link seguir leyendo" required="true">
 
             <!-- Destacado semanal -->
             <label class="uppercase">Ingrese el <span class="mark-color">el destacado</span></label>

@@ -652,8 +652,8 @@ if ($action === "generate") {
 	                <table border="0" cellpadding="0" cellspacing="0" class="mcnButtonContentContainer" style="border-collapse: separate !important;border-radius: 3px;background-color: #EAEAEA;">
 	                    <tbody>
 	                        <tr>
-	                            <td align="center" valign="middle" class="mcnButtonContent" style="font-family: Roboto, &quot;Helvetica Neue&quot;, Helvetica, Arial, sans-serif; font-size: 16px; padding: 15px;">
-	                                <a class="mcnButton " title="Leer más historias" href="https://medium.com/latio-reads/emprendiendo-por-el-medio-ambiente-13dcb12700c6" target="_blank" style="font-weight: bold;letter-spacing: normal;line-height: 100%;text-align: center;text-decoration: none;color: #FFFFFF;">Leer más historias</a>
+	                            <td align="center" valign="middle" class="mcnButtonContent" style="font-family: Roboto, &quot;Helvetica Neue&quot;, Helvetica, Arial, sans-serif; font-size: 16px; padding: 15px;  background-color: #00d7e6 !important;">
+	                                <a class="mcnButton " title="Continuar Leyendo" href="<?php echo $continue_reading;?>" target="_blank" style="font-weight: bold;letter-spacing: normal;line-height: 100%;text-align: center;text-decoration: none;color: #FFFFFF; ">Continuar leyendo</a>
 	                            </td>
 	                        </tr>
 	                    </tbody>
@@ -725,8 +725,8 @@ if ($action === "generate") {
                         <td valign="top" class="mcnTextContent" style="padding-top:0; padding-right:18px; padding-bottom:9px; padding-left:18px;">
 
                             <div style="text-align: center;"><br>
-<span style="color:#000000"><span style="font-family:roboto,helvetica neue,helvetica,arial,sans-serif">TOP 3<br>
-<strong>NOTICIAS DE LA SEMANA</strong></span></span></div>
+<span style="color:#000000"><span style="font-family:roboto,helvetica neue,helvetica,arial,sans-serif; text-transform: uppercase;">Más<br>
+<strong>de la semana que pasó</strong></span></span></div>
 
                         </td>
                     </tr>
@@ -1383,7 +1383,7 @@ if ($action === "generate") {
 ¿Dejar de recibir estos mails?<br>
 <a href="*|UNSUB|*" target="_blank">Desuscribirse</a><br>
 <br>
-*|IF:REWARDS|* *|HTML:REWARDS|* *|END:IF|*
+
                         </td>
                     </tr>
                 </tbody></table>
