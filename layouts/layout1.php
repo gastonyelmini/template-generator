@@ -1378,7 +1378,7 @@ if ($action === "generate") {
 
                         <td valign="top" class="mcnTextContent" style="padding: 0px 18px 9px;color: #888888;">
 
-                            <em>Latio 2017, Algunos Derechos Reservados.</em><br>
+                            <em>Latio 2018, Algunos Derechos Reservados.</em><br>
 <br>
 ¿Dejar de recibir estos mails?<br>
 <a href="*|UNSUB|*" target="_blank">Desuscribirse</a><br>
