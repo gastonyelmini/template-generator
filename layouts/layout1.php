@@ -562,7 +562,7 @@ if ($action === "generate") {
 	                    <table align="left" width="100%" border="0" cellpadding="0" cellspacing="0" class="mcnImageContentContainer" style="min-width:100%;">
 	                        <tbody><tr>
 	                            <td class="mcnImageContent" valign="top" style="padding-right: 0px; padding-left: 0px; padding-top: 0; padding-bottom: 0; text-align:center;">
-																					<img src="<?php echo "../" . $uploads_path . $main_image_path; ?>" width="600" style="max-width:800px; padding-bottom: 0; display: inline !important; vertical-align: bottom;" class="mcnImage"/>
+																					<img src="<?php echo $site_url . $uploads_path . $main_image_path; ?>" width="600" style="max-width:800px; padding-bottom: 0; display: inline !important; vertical-align: bottom;" class="mcnImage"/>
 	                            </td>
 	                        </tr>
 	                    </tbody></table>
