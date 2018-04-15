@@ -829,7 +829,7 @@ if ($action === "generate") {
 											<td valign="top" class="mcnTextContent" style="padding-top:0; padding-right:18px; padding-bottom:9px; padding-left:18px;">
 
 													<a href="<?php echo $t3_n2_link;?>" target="_blank"><span style="font-size:15px"><span style="font-family:roboto,helvetica neue,helvetica,arial,sans-serif"><?php echo $t3_n2_title; ?>&nbsp;&gt;</span></spa	n></a><br>
-<span style="color:#000000"><span style="font-size:14px"><?php echo $t3_n3_desc; ?></span></span>
+<span style="color:#000000"><span style="font-size:14px"><?php echo $t3_n2_desc; ?></span></span>
 											</td>
                     </tr>
                 </tbody></table>
